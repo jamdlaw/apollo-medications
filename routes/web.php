@@ -31,4 +31,4 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-Route::resource('medications', MedicationController::class);
+Route::resource('medications', MedicationController::class)->middleware('auth');;
